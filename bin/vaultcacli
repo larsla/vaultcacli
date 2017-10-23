@@ -51,7 +51,7 @@ if __name__ == '__main__':
     parser.add_argument("--ttl", help="TTL for the certificate", type=str)
     args = parser.parse_args()
 
-    URL = os.getenv('VAULT_URL')
+    URL = os.getenv('VAULT_ADDR')
     TOKEN = os.getenv('VAULT_TOKEN')
     if args.url:
         URL = args.url
